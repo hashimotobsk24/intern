@@ -3,13 +3,10 @@ html {
 }
 
 body {
-    min-width: 1200px;
+    /* min-width: 1200px; */
    /* padding-right: -500px; */
 }
 
-main {
-    overflow: hidden;
-}
 
 .wrap {
     overflow: hidden;
@@ -84,6 +81,50 @@ main {
 
 .menubar li:nth-child(4) {
     margin-right: 100px;
+}
+
+/* 非表示にする */
+.none {
+    z-index: -5;
+}
+
+#humberger {
+    z-index: -5;
+}
+
+/* ハンバーガーメニュー */
+
+
+
+.open {
+    height: 1000px;
+    width: 100%;
+    background-color: black;
+    display: none;
+    text-align: center;
+}
+
+.open ul {
+    padding: 30px;
+}
+
+.open li {
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.rule {
+    display: none;
+}
+
+.kekka {
+    display: none;
+}
+
+.ofline {
+    display: none;
 }
 
 /* main */
@@ -336,14 +377,140 @@ h3 {
 
 
 /* レスポンシブ iphone*/
-@media screen and (max-width:480px) { 
+@media screen and (max-width:500px) { 
+
+body {
+   width: 500px;
+   padding-right: -800px;
+}
+
+.wrap {
+    width: 500px;
+    overflow: hidden;
+}
+
+body {
+    max-width: 500px;
+}
 
 
+.menu {
+    height: 25px;;
+}
+
+main {
+    overflow: hidden;
+    width: 500px;
+}
+
+.menu ul{
+    height: 25px;
+    position: relative;
+    left: 100px;
+}
+
+.menubar li{
+    display: none;
+}
+   
+.snsmenu {
+    width: 100%;
+    height: 35px;
+    right: 40px;
+}
+
+.snsmenu li {
+    font-size: 10px;
+    position: relative;
+    left: 20px;
+}
+
+.rogo img {
+    height: 60px;
+    position: relative;
+    top: 0px;
+    right: 90px;
+}
+
+.btn {
+    width: 500px;
+    height: 80px;
+}
+
+.btn li:hover {
+    height: 50px;
+}
+
+/* .none {
+    z-index: 5;
+}
+
+#humberger {
+    z-index: 5;
+} */
+
+/*  main */
+
+.top {
+    display: none;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seki:nth-child(1) {
+    margin-bottom: -40px;
+}
+
+.seki:last-child {
+    border-top: 0px solid gray;
+}
+
+.open ul{
+    height: 130px;
+    margin-left: -200px;
+}
+
+.ofline li{
+    padding-top: 40px;
+}
+
+
+/* footer */
+.end {
+    height: 1400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+}
+
+.end p {
+    position: relative;
+    top: 950px;
+    left: 40px;
+}
+
+.fourbtn {
+    position: relative;
+    top: 1000px;
+    left: 90px;
+}
+
+.copyright {
+    width: 500px;
+}
+
+footer {
+    width: 500px;
+}
 
 }
 
 /* タブレット */
-@media screen and (max-width:760px){
+@media screen and (min-width:510px) and (max-width:760px){
 
 body {
     min-width: 760px;
@@ -374,12 +541,13 @@ main {
 
 .menubar ul{
     height: 50px;
-    position: relative;
-    left: 200px;
+
 }
 
 .menubar li{
     font-size: 12px;
+    position: relative;
+    left: 70px;
 }
    
 .snsmenu {
@@ -388,13 +556,17 @@ main {
 
 .snsmenu li {
     font-size: 10px;
+    position: relative;
+    left: 70px;
 }
 
 .rogo img {
-    height: 60px;
-    position: relative;
+    height: 70px;
+    width: 130px;
+    position: absolute;
     top: 10px;
-    left: 30px;
+    left: 0px; 
+    float: left;
 }
 
 .btn {
@@ -405,9 +577,37 @@ main {
     height: 50px;
 }
 
+/* 非表示にする */
+.midlenone {
+    display: none;
+}
+
+#add {
+    display: none;
+}
+
+/* メニューバーの文字表示にする */
+.none {
+    z-index: 5;
+}
+
+#humberger {
+    z-index: 5;
+}
+
 .contens {
     width: 100%;
 }
+
+.open ul{
+    height: 130px;
+    margin-left: -350px;
+}
+
+.ofline li{
+    padding-top: 40px;
+}
+
 
 
 h1 {

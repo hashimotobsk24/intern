@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+#<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
     <div class="menu">
     <div class="snsmenu">
         <ul>
-            <li>オフライン大会申し込み<i class="far fa-paper-plane"></i></li>
+            <li class="midlenone" id= "add">オフライン大会申し込み<i class="far fa-paper-plane"></i></li>
             <li>SHARE<i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i></li>
             <li>LANGUAGE<i class="fas fa-globe"></i></li>
         </ul>
@@ -27,11 +27,34 @@
 
     <div class="menubar">
         <ul>
-            <li>TOP</li>
-            <li>大会概要</li>
-            <li>ルール/応募について</li>
-            <li>大会結果</li>
+            <li class="midlenone">TOP</li>
+            <li class="midlenone">大会概要</li>
+            <li class="midlenone">ルール/応募について</li>
+            <li class="midlenone">大会結果</li>
+            <li class="none">オフライン大会申し込み<i class="far fa-paper-plane"></i></li>
+            <li id="humberger"> <i class="fas fa-bars  fa-2x" ></i></li>
         </ul>
+    </div>
+
+    <div id="open" class="open">
+
+            <ul id="rule" class="rule">
+                <li>TOP</li>
+                <li>大会概要</li>
+                <li>大会のルール/応募について</li>
+            </ul>
+
+    
+            <ul id="kekka" class="kekka">
+                <li>大会結果</li>
+                <li>オフライン予選</li>
+                <li>オンライン予選</li>
+                <li>大会決勝</li>
+            </ul>
+        
+            <ul id="ofline" class="ofline">
+                <li>オフライン大会申し込み</li>
+            </ul>
     </div>
 
 </div>
@@ -155,5 +178,8 @@
 </footer>    
 
 </div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="./assets/app.js"></script>
 </body>
 </html>
